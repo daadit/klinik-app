@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif !important;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.card-left {
+    position: relative !important;
+    padding: 3rem 0;
+    height: 100vh;
+}
+
+.img-background {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(130.84deg, rgba(201, 201, 201, 0.52) 30.54%, rgba(202, 76, 88, 1)), url('./assets/img/background.png');
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.left-title, .left-description {
+    position: absolute;
+}
+
+.left-title {
+    top: 114px;
+    left: 118px;
+    font-weight: 600;
+    font-size: 46px;
+    color: #FBFBFA;
+    line-height: 74px;
+}
+
+.left-description {
+    bottom: 122px;
+    left: 118px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FBFBFA;
+    font-style: oblique;
+}
+
+.card-right {
+    background: #FFFFFF;
+    box-shadow: 2px 8px 15px rgba(79, 76, 74, 0.08);
+    border-radius: 12px;
+    padding: 22px 23px;
+}
+
+.card-header {
+    text-align: center;
+}
