@@ -16,8 +16,9 @@ body {
 
 .card-left {
     position: relative !important;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
     height: 100vh;
+    z-index: 1;
 }
 
 .img-background {
@@ -35,16 +36,16 @@ body {
 
 .left-title {
     top: 114px;
-    left: 118px;
+    left: 110px;
     font-weight: 600;
-    font-size: 46px;
+    font-size: 44px;
     color: #FBFBFA;
     line-height: 74px;
 }
 
 .left-description {
     bottom: 122px;
-    left: 118px;
+    left: 110px;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -52,11 +53,16 @@ body {
     font-style: oblique;
 }
 
+.content{
+    z-index: 2;
+}
+
 .card-right {
     background: #FFFFFF;
     box-shadow: 2px 8px 15px rgba(79, 76, 74, 0.08);
     border-radius: 12px;
     padding: 22px 23px;
+    margin-left: -100px !important;
 }
 
 .card-header {
@@ -110,6 +116,11 @@ body {
     font-size: 14px;
 }
 
+.button:hover {
+    background: #e7707c;
+    transition: .3s;
+}
+
 .card-footer {
     text-align: center;
 }
@@ -122,11 +133,19 @@ a {
     color: #353432;
 }
 
-.text-footer {
+.content-footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 28px;
+    margin-top: 4px;
+    margin-bottom: 26px;
+    gap: 3px;
+}
+
+.text-footer {
+    font-size: 15px;
+    font-weight: 400;
+    color: #777574;
 }
 
 .divider {
